@@ -87,4 +87,4 @@ If you encounter any issues or have questions, feel free to open an issue on Git
 ---
 
 Enjoy using the **Tab Locker** extension!
-```
+
