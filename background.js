@@ -1,4 +1,4 @@
-// Function to start locking tabs
+
 function startLockingTabs() {
     console.log('Starting to lock tabs...');
     
@@ -25,7 +25,6 @@ function startLockingTabs() {
     });
 }
 
-// Function to lock a tab
 function lockTab() {
     document.body.innerHTML = `
         <style>
@@ -59,16 +58,16 @@ function lockTab() {
             <p>Please enter the password in the extension popup to unlock.</p>
         </div>
     `;
-    document.title += ' - Locked'; // Append ' - Locked' to the title
+    document.title += ' - Locked';
 }
 
-// Function to unlock a tab
+
 function unlockTab() {
-    document.body.innerHTML = ''; // Clear lock screen
-    document.title = document.title.replace(' - Locked', ''); // Remove ' - Locked' from title
+    document.body.innerHTML = ''; 
+    document.title = document.title.replace(' - Locked', '');
 }
 
-// Add listener for messages from popup
+
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.action === 'unlock') {
         chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
@@ -90,12 +89,12 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
                 sendResponse({ success: false });
             }
         });
-        // Keep the message channel open until `sendResponse` is called
+        
         return true;
     }
 });
 
-// Start locking tabs when extension is installed or updated
+
 chrome.runtime.onInstalled.addListener(() => {
     startLockingTabs();
 });
