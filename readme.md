@@ -1,87 +1,90 @@
-# Tab Locker Chrome Extension
+# Tab Locker Extension
 
-Tab Locker is a Chrome extension that allows you to lock all your open tabs with a password. Once locked, the contents of the tabs are hidden until the correct password is entered. This is ideal for maintaining privacy when you're away from your computer.
+**Tab Locker** is a Chrome extension that locks all open tabs with a password. It's perfect for temporarily restricting access to your browsing session until a password is entered.
 
 ## Features
 
-- Lock all open tabs with a single click.
-- Secure your browsing session with a password.
-- Simple and easy-to-use interface.
+- **Lock all tabs:** Secure all open tabs with a single password.
+- **Unlock tabs:** Restore access by entering the correct password.
+- **Simple and user-friendly:** Easy to set up and use.
 
 ## Installation
 
-To install the Tab Locker Chrome extension locally, follow these steps:
+To install and set up the extension locally:
 
-1. **Clone the Repository:**
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/RaghavArora2/tab-locker-extension.git
+   ```
 
+
+2. **Navigate to the Project Directory**
+   ```bash
+   cd tab-locker-extension
+   ```
+
+3. **Load the Extension in Chrome**
+   - Open Chrome and go to `chrome://extensions/`.
+   - Enable "Developer mode" using the toggle in the top right corner.
+   - Click on the "Load unpacked" button.
+   - Select the `tab-locker-extension` directory.
+
+## Usage
+
+### Locking Tabs
+
+1. Click on the extension icon in the Chrome toolbar.
+2. Enter a password in the popup window.
+3. Click "Lock Tabs" to lock all open tabs. They will display a locked screen.
+
+### Unlocking Tabs
+
+1. Click on the extension icon again.
+2. Enter the password in the popup window.
+3. Click "Unlock Tabs" to restore the original content of the tabs.
+
+## Development
+
+### Setting Up Your Environment
+
+1. **Clone the Repository**
    ```bash
    git clone https://github.com/yourusername/tab-locker-extension.git
    cd tab-locker-extension
-Load the Extension in Chrome:
+   ```
 
-Open Chrome and go to chrome://extensions/.
-Enable Developer mode by toggling the switch in the top right corner.
-Click Load unpacked and select the directory where you cloned the repository.
-Start Using the Extension:
+2. **Edit the Code**
+   - Open the project in your preferred code editor (e.g., [VS Code](https://code.visualstudio.com/)).
+   - Modify the necessary files (`background.js`, `popup.html`, etc.).
+   - Save your changes.
 
-Click on the Tab Locker icon in the Chrome toolbar.
-Set your desired password and click "Lock Tabs".
-To unlock, enter your password.
-Usage
-Lock Tabs:
+3. **Push Changes**
+   - Add your changes:
+     ```bash
+     git add .
+     ```
+   - Commit your changes:
+     ```bash
+     git commit -m "Describe your changes here"
+     ```
+   - Push your changes to GitHub:
+     ```bash
+     git push origin main
+     ```
 
-Click the Tab Locker icon in your Chrome toolbar.
-Enter your desired password.
-Click the "Lock Tabs" button. All open tabs will be locked and hidden.
-Unlock Tabs:
+## Contributing
 
-When you want to unlock your tabs, click the Tab Locker icon again.
-Enter your password and click "Unlock Tabs". Your tabs will be restored to their original state.
-Screenshots
-Here are a few screenshots of the extension in action:
+Contributions are welcome! Please fork the repository, create a feature branch, and submit a pull request. Make sure to provide a detailed description of your changes and ensure your code follows the existing style.
 
+## License
 
-Locking your tabs.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
+## Support
 
-Unlocking your tabs with a password.
+If you encounter any issues or have questions, feel free to open an issue on GitHub or contact the repository owner.
 
-Development
-If you want to contribute or modify the extension, follow these instructions:
+---
 
-Prerequisites
-Git: Version control system to clone the repository.
-Chrome: A Chromium-based browser to test the extension.
-Steps
-Clone the Repository:
-
-bash
-Copy code
-git clone https://github.com/yourusername/tab-locker-extension.git
-cd tab-locker-extension
-Modify the Source Code:
-
-Open the files in your preferred code editor.
-Make your changes to the popup.html, background.js, or manifest.json as needed.
-Test Your Changes:
-
-Go to chrome://extensions/ and reload the extension.
-Test your modifications directly in Chrome.
-Push Your Changes:
-
-If you're satisfied with your changes, push them to the GitHub repository:
-
-bash
-Copy code
-git add .
-git commit -m "Describe your changes"
-git push origin master
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Acknowledgements
-Inspired by privacy and productivity tools that help manage browsing sessions.
-Thanks to Your Name for the development and maintenance of this project.
-
-Contact
-For any inquiries or feedback, please reach out to me at raghavarora419@gmail.com.
+Enjoy using the **Tab Locker** extension!
+```
